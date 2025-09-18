@@ -25,7 +25,7 @@ class Account:
 
     def get_balance(self) -> float:
         db_balance = self.db_connection.get_account(self.account_number)
-        return db_balance
+        return self.balance
 
     def get_owner(self) -> User:
         return self.user
