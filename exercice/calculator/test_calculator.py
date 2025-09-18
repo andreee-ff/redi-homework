@@ -2,7 +2,7 @@ import pytest
 
 from exercice.calculator.calculator import Calculator
 
-calculator_fixture_scope = "placeholder"  # TODO add the correct scope here
+calculator_fixture_scope = "placeholder"  # TODO (5 Points) add the correct scope here
 
 
 @pytest.fixture(scope=calculator_fixture_scope)
@@ -21,17 +21,17 @@ def test_subtract(calculator):
 
 
 def test_multiply(calculator):
-    # TODO: Complete this test
+    # TODO (5 Points) : Complete this test
     pass
 
 
 def test_divide(calculator):
-    # TODO: Complete this test
+    # TODO (5 Points) : Complete this test
     pass
 
 
 def test_divide_by_zero(calculator):
-    # TODO: Complete this test (Hint: use pytest.raises)
+    # TODO (10 Points) : Complete this test (Hint: use pytest.raises)
     pass
 
 
@@ -53,7 +53,7 @@ def test_evaluate_divide(calculator):
 
 def test_evaluate(calculator, a, b, op, expected):
     """
-    TODO: Add the @pytest.mark.parametrize decorator to test multiple operations in one go,
+    TODO (20 Points) : Add the @pytest.mark.parametrize decorator to test multiple operations in one go,
     allowing to replace the individual tests above. (test_evaluate_add, test_evaluate_subtract...)
     """
 

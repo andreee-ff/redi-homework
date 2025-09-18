@@ -59,6 +59,6 @@ class Calculator:
 
 
 if __name__ == "__main__":
-    calc = Calculator()
+    calc = Calculator(config=Config())
     while True:
         calc.run_console()
