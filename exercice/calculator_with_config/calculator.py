@@ -1,6 +1,5 @@
 from exercice.calculator_with_config.config import Config
 
-
 class Calculator:
     def __init__(self, config: Config):
         self.prompt = config.get_prompt()

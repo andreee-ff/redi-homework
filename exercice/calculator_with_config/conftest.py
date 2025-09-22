@@ -8,6 +8,9 @@ def config():
     TODO (25 Points) : Complete this fixture to return a MagicMock object.
     The Mock object should have a method get_prompt that returns the string ">".
     """
+    moch_obj = MagicMock()
+    moch_obj.get_prompt.return_value = ">"
+    return moch_obj    
     pass
 
 @pytest.fixture
